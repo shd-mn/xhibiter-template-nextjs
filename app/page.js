@@ -1,3 +1,5 @@
+import Home from "@/container/Home";
+
 export default function HomePage() {
-    return <main></main>;
+  return <Home />;
 }
