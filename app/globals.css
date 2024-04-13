@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+@layer base {
+    .hero {
+        background: url('/images/bg.jpg');
+    }
 }
 
-@layer base {
-  .hero {
-    background: url("/images/bg.jpg");
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-calSans text-text-heading-clr;
 }
