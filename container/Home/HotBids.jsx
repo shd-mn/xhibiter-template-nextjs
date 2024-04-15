@@ -5,7 +5,7 @@ import { hotBidData } from './data/hotBidsData';
 
 function HotBids() {
     return (
-        <section>
+        <section className="mb-24">
             <div className="container">
                 <div className="mb-8 flex items-center justify-center gap-4">
                     <Image src={fireImg} alt="" className="h-6 w-6" />

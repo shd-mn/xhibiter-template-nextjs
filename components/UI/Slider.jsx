@@ -18,7 +18,6 @@ function Slider({ data }) {
             modules={[Navigation]}
             className="!py-5"
             breakpoints={{
-
                 640: {
                     slidesPerView: 2,
                     spaceBetween: 20,
@@ -37,7 +36,7 @@ function Slider({ data }) {
         >
             {data.map((item, idx) => (
                 <SwiperSlide key={idx} className="bg-red h-12">
-                    <div className="select-none h-full rounded-[20px] border p-5 transition-shadow hover:shadow-lg">
+                    <div className="h-full select-none rounded-[20px] border p-5 transition-shadow hover:shadow-lg">
                         <Link href={item.link} passHref className="mb-3 w-full">
                             <Image
                                 src={item.image}
@@ -49,7 +48,7 @@ function Slider({ data }) {
                         <Link
                             href={item.link}
                             passHref
-                            className="mb-3 text-sm flex w-full items-center justify-between font-calSans text-h-clr"
+                            className="mb-3 flex w-full items-center justify-between font-calSans text-h-clr duration-200 hover:text-primary-hover"
                         >
                             {item.name}
                             <div className="flex items-center gap-1 rounded-md border px-1 py-[2px] font-dmSans text-green-500">
@@ -61,7 +60,7 @@ function Slider({ data }) {
                         <div className="flex items-center justify-between">
                             <button
                                 type="button"
-                                className="font-calSans text-primary"
+                                className="font-calSans text-sm text-primary"
                             >
                                 Place bid
                             </button>

@@ -4,7 +4,7 @@ import React from 'react';
 function PrimaryBtn({ title, href }) {
     return (
         <Link
-            class="shadow-accent-volume inline-block whitespace-nowrap rounded-full bg-primary px-8 py-3 text-center text-white  transition-all hover:bg-primary-hover"
+            className="shadow-accent-volume inline-block whitespace-nowrap rounded-full bg-primary px-8 py-3 text-center font-calSans text-white  transition-all hover:bg-primary-hover"
             href={href}
         >
             {title}

@@ -6,13 +6,41 @@
     .hero {
         background: url('/images/bg.jpg');
     }
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @apply font-calSans text-text-heading-clr;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-calSans text-h-clr;
+    }
+
+    .text-dark {
+        @apply text-t-clr hover:text-primary-hover dark:hover:text-white;
+    }
+
+    a {
+        @apply inline-block;
+    }
+
+    .shadow-accent-volume {
+        --tw-shadow: 5px 5px 10px rgba(108, 106, 213, 0.25),
+            inset 2px 2px 6px #a78df0, inset -5px -5px 10px #6336e4;
+        --tw-shadow-colored: 5px 5px 10px var(--tw-shadow-color),
+            inset 2px 2px 6px var(--tw-shadow-color),
+            inset -5px -5px 10px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+            var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .shadow-white-volume {
+        --tw-shadow: 5px 5px 10px rgba(108, 106, 212, 0.25),
+            inset 2px 2px 6px #eef1f9, inset -5px -5px 10px #dfe3ef;
+        --tw-shadow-colored: 5px 5px 10px var(--tw-shadow-color),
+            inset 2px 2px 6px var(--tw-shadow-color),
+            inset -5px -5px 10px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+            var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
 }

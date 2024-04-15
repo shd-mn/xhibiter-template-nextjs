@@ -1,16 +1,15 @@
 'use client';
-
 import { useState } from 'react';
-import { topCollectionsData } from './data/topCollectionsData';
 import Link from 'next/link';
 import Image from 'next/image';
-import { CheckIcon } from '@/data/icons';
 import PrimaryBtn from '@/components/UI/PrimaryBtn';
+import { topCollectionsData } from './data/topCollectionsData';
+import { CheckIcon, ChevronIcon } from '@/data/icons';
 
 function TopCollections() {
     const [show, setShow] = useState(false);
     return (
-        <section className="py-24">
+        <section className="bg-[#FDFAFD] py-24">
             <div className="container">
                 <header className="mb-12 w-full text-center">
                     <h3 className="inline text-3xl">
@@ -19,13 +18,16 @@ function TopCollections() {
                     <div className="relative ml-1 inline-block">
                         <button
                             type="button"
-                            className="inline-flex font-calSans text-3xl text-primary"
+                            className="inline-flex items-center font-calSans text-3xl text-primary"
                             onClick={() => setShow(!show)}
                         >
                             Last 24 Hours
+                            <span>
+                                <ChevronIcon className="h-6 w-6" />
+                            </span>
                         </button>
                         <div
-                            className={`${show ? 'flex' : 'hidden'} absolute top-full w-full flex-col gap-2 rounded-md bg-white px-2 py-3 shadow-lg`}
+                            className={`${show ? 'flex' : 'hidden'} absolute top-full z-20 w-full flex-col gap-2 rounded-md bg-white px-2 py-3 shadow-lg`}
                         >
                             <button
                                 type="button"

@@ -23,18 +23,21 @@ module.exports = {
             },
             colors: {
                 primary: '#8358fc',
-                'primary-hover': '#8358FF',
-                'text-heading-clr': ' #131740',
-                'text-clr': ' #5A5D79',
-                secondary: '#BDEFFB',
+                'primary-hover': '#7444ff',
+                'h-clr': ' #131740',
+                't-clr': ' #5A5D79',
+                'dark-clr': '#0D102D',
 
-                'black-100': '#161616',
-                'g-accent': '#0066D9',
-                'g-gray': '#474747',
-                'g-light1': '#ECF2FF',
-                'g-light2': '#FBF8EE',
-                'g-light3': '#FFE3EE',
-                'g-shadow': '#c7ceda40',
+                secondary: '#BDEFFB',
+            },
+            animation: {
+                'move-y': 'move-y 5s ease-in-out infinite',
+            },
+            keyframes: {
+                'move-y': {
+                    '0%, 100%': { transform: 'translateY(-10px)' },
+                    '50%': { transform: 'translateY(10px)' },
+                },
             },
         },
     },
