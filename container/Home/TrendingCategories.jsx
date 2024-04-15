@@ -54,7 +54,7 @@ function TrendingCategories() {
                                 </span>
                                 <span className="ml-8">
                                     <ChevronIcon
-                                        className={`h-5 w-5 ${show && 'rotate-180'}`}
+                                        className={`h-4 w-4 ${show && 'rotate-180'}`}
                                     />
                                 </span>
                             </button>

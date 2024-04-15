@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${calSans.variable} ${dmSans.variable}`}>
-            <body className={`${dmSans.className}`}>
+            <body className={`${dmSans.className} text-dark-clr`}>
                 <Header />
                 {children}
                 <Footer />

@@ -8,11 +8,11 @@ function ExploreCollections() {
     const [show, setShow] = useState(false);
 
     return (
-        <section className="pb-24 pt-36 md:pt-48">
+        <section className="bg-[#FDFAFD] pb-24 pt-36 md:pt-44">
             <div className="container">
                 <header className="mb-8">
-                    <div className="mb-12 flex items-center justify-center gap-4">
-                        <h2 className="text-center text-[30px] dark:text-white ">
+                    <div className="mb-16 flex items-center justify-center gap-4">
+                        <h2 className="text-center text-4xl dark:text-white ">
                             Explore Collections
                         </h2>
                     </div>
@@ -40,13 +40,13 @@ function ExploreCollections() {
                         <div className="relative">
                             <button
                                 type="button"
-                                className="flex items-center gap-1 rounded-lg border px-3 py-[6px] font-calSans text-sm text-t-clr"
+                                className={`flex items-center gap-1 rounded-lg border px-3 py-[6px] font-calSans text-sm text-t-clr`}
                                 onClick={() => setShow(!show)}
                             >
                                 <span className="pt-[2px]">Trending</span>
                                 <span className="ml-8">
                                     <ChevronIcon
-                                        className={`h-5 w-5 ${show && 'rotate-180'}`}
+                                        className={`h-4 w-4 ${show && 'rotate-180'}`}
                                     />
                                 </span>
                             </button>
